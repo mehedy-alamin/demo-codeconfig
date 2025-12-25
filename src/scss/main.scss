@@ -1,14 +1,11 @@
-// Main Styles
-// Import partials here
+// @use 'partials/index' as *;
+// @use 'partials/typography' as *;
+// Other file imports go here
 
-// Variables
-@import 'partials/variables';
 
-// Base
-@import 'partials/base';
 
-// Components
-@import 'partials/components';
+// Header & Footer 
+@forward 'global/header';
 
-// Layout
-@import 'partials/layout';
+// Products 
+@forward 'products/google-drive';
