@@ -1,0 +1,431 @@
+@use "./../globals/mixins" as *;
+
+.cc-halloween-timer-countdown {
+  .cc-timer {
+    gap: 8px;
+    z-index: 4;
+
+    .cc-counter-time {
+      width: clamp(40px, 5vw, 60px);
+      aspect-ratio: 1 / 1;
+      position: relative;
+      flex-direction: column;
+      gap: 2px;
+      border: 1px solid #7f00ff;
+      border-radius: 12px;
+      color: #ffffff;
+      background: #2900536c;
+      backdrop-filter: blur(10px);
+
+      h5 {
+        font-size: clamp(16px, 2vw, 30px);
+        line-height: 1;
+        font-weight: 600;
+      }
+
+      span {
+        font-size: clamp(8px, 1vw, 12px);
+        line-height: 1;
+      }
+    }
+  }
+}
+
+// Halloween Announcement Styles
+.cc-halloween-announcement-bar {
+  position: fixed !important;
+  width: 100%;
+  background: #000000;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  z-index: 999;
+  padding: clamp(30px, 4vw, 40px) 0;
+  height: 0;
+
+  .bar-bg {
+    z-index: -1;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .side-bg {
+    z-index: 0;
+    height: 100%;
+    bottom: 0;
+    transition: all 0.5s ease 0.3s;
+
+    @include breakpoint(1024) {
+      filter: opacity(0.5);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      max-width: clamp(40px, 5vw, 65px);
+      aspect-ratio: 1 / 1;
+      background-position: center !important;
+      background-size: contain !important;
+      background-repeat: no-repeat !important;
+      bottom: 5px;
+    }
+
+    &.left-side-bg {
+      left: 5px;
+
+      &::after {
+        background: url("/wp-content/themes/codeconfig/assets/images/halloween-offer/top-bar-pumpkin.webp");
+
+        left: clamp(20px, 3vw, 50px);
+      }
+    }
+
+    &.right-side-bg {
+      right: 5px;
+      transform: rotateY(180deg);
+
+      &::after {
+        background: url("/wp-content/themes/codeconfig/assets/images/halloween-offer/top-bar-skeleton-head.webp");
+        right: calc(clamp(20px, 3vw, 50px) * -1);
+      }
+    }
+  }
+
+  .campaign-container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    gap: 10px;
+
+    @include breakpoint(575) {
+      gap: 5px;
+      padding: 5px 0;
+    }
+
+    .cc-offer-amount {
+      width: 100%;
+      max-width: 500px;
+      justify-content: space-around;
+      padding: 5px 0;
+
+      .cc-banner-img,
+      .offer-img {
+        gap: clamp(15px, 3vw, 30px);
+        position: relative;
+        height: clamp(35px, 6vw, 65px);
+      }
+
+      @include breakpoint(575) {
+        width: unset;
+        max-width: unset;
+
+        .offer-img {
+          display: none;
+        }
+      }
+
+      @include breakpoint(450) {
+        display: none;
+      }
+    }
+
+    .cc-countdown-wrapper {
+      .cc-timer {
+        .cc-counter-time {
+          background: linear-gradient(180deg, #2a0053 0%, #0a0014 100%);
+        }
+      }
+    }
+
+    .cc-offer-purpose {
+      width: 100%;
+      max-width: 400px;
+
+      @include breakpoint(1440) {
+        justify-content: space-around;
+      }
+
+      @include breakpoint(575) {
+        flex-direction: column;
+        gap: 5px;
+        width: unset;
+        max-width: unset;
+      }
+
+      .cc-banner-coupon {
+        background: #220043;
+        border: 1px dashed #7f00ff;
+        border-radius: 8px;
+        padding: clamp(5px, 1vw, 12px) clamp(10px, 2vw, 20px);
+
+        p {
+          font-size: clamp(10px, 2vw, 16px);
+          line-height: 1;
+          font-weight: 500;
+          color: #ffffff;
+          text-transform: uppercase;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: clamp(20px, 3vw, 40px);
+          aspect-ratio: 2 / 5;
+          background: url("/wp-content/themes/codeconfig/assets/images/halloween-offer/halloween-ghost-hand.webp");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          z-index: 2;
+          top: calc(0% - clamp(5px, 1vw, 12px));
+          right: calc(0% - clamp(10px, 2vw, 20px) * 1 - 5px);
+        }
+      }
+
+      .cc-banner-button {
+        font-size: clamp(12px, 2vw, 20px);
+        line-height: 1.2;
+        color: #ffffff;
+        background: #8000ff;
+        border-radius: 6px;
+        padding: clamp(5px, 1vw, 8px) clamp(10px, 2vw, 20px);
+        border: 1px solid #8000ff;
+        backdrop-filter: blur(5px);
+        z-index: 4;
+        text-wrap: nowrap;
+        gap: 8px;
+
+        &:hover {
+          background: #8000ff67;
+        }
+
+        &::before {
+          content: "";
+          mask: url("/wp-content/themes/codeconfig/assets/images/halloween-offer/pumpkin-icon.webp");
+          mask-size: contain;
+          mask-repeat: no-repeat;
+          width: clamp(12px, 2vw, 18px);
+          aspect-ratio: 1 / 1;
+          background: currentColor;
+        }
+      }
+    }
+
+    .cc-campaign-close {
+      z-index: 5;
+      cursor: pointer;
+      min-width: clamp(12px, 1vw, 20px);
+      aspect-ratio: 1 / 1;
+      right: 5px;
+
+      &::after,
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: all 0.3s ease;
+      }
+
+      &::after {
+        transform: rotate(45deg);
+      }
+
+      &::before {
+        transform: rotate(-45deg);
+      }
+
+      &:hover {
+        &::after,
+        &::before {
+          box-shadow: 0 0 2px 2px #ffffff;
+        }
+      }
+    }
+  }
+
+  &.inactive-bar {
+    height: 0 !important;
+    overflow: hidden !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    opacity: 0 !important;
+    padding: 0 0;
+    transition: all 0.3s ease;
+
+    .side-bg {
+      &.left-side-bg {
+        left: -10px;
+      }
+
+      &.right-side-bg {
+        right: -10px;
+      }
+    }
+  }
+}
+
+// Halloween Popup Styles
+.cc-halloween-popup {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  padding: 0 25px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.473);
+    backdrop-filter: blur(10px);
+    top: 0;
+    z-index: 1;
+  }
+
+  .cc-token-close {
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    background: transparent;
+    height: clamp(15px, 2vw, 20px);
+    padding: 10px;
+    border-radius: 50%;
+    aspect-ratio: 1 /1;
+    background: #8000ff;
+    @include transition;
+
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 70%;
+      border-radius: 5px;
+      background: #ffffff;
+      @include transition;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+
+    &:hover {
+      filter: drop-shadow(0 0 2px #ffffff);
+
+      &::after,
+      &::before {
+        background: rgb(243, 140, 140);
+      }
+    }
+  }
+
+  .cc-popup-fame-font {
+    background: url("/wp-content/themes/codeconfig/assets/images/halloween-offer/halloween-popup-bg.webp"),
+      #0a0014;
+    transition: all 0.4s cubic-bezier(0.35, 0.38, 0.6, 2.09);
+    scale: 0.2;
+    max-width: 400px;
+    width: 100%;
+    z-index: 2;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    .fame-wrapper {
+      gap: clamp(10px, 2vw, 20px);
+      padding: 20px;
+      padding-bottom: clamp(2rem, 4vw, 5rem);
+
+      .cc-popup-tag-image {
+        width: 100%;
+        max-width: clamp(150px, 32vw, 190px);
+        margin-bottom: 10px;
+      }
+
+      .popup-description {
+        font-size: clamp(0.875rem, 1vw, 1rem);
+        color: #ffffff;
+        line-height: 1.5em;
+        font-family: "Jolly Lodger", sans-serif;
+      }
+
+      .cc-secret-token-area {
+        width: max-content;
+        padding: clamp(0.5rem, 1vw, 0.6rem) clamp(0.5rem, 1vw, 0.8rem);
+        border: 1px dashed #7f00ff;
+        background: #220043;
+        backdrop-filter: blur(10px);
+        border-radius: 14px;
+        color: #ffffff;
+        gap: 10px;
+
+        .cc-token-code {
+          font-size: clamp(1rem, 2vw, 1.2rem);
+          line-height: 1em;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+
+        .cc-token-copy {
+          width: clamp(0.9rem, 2vw, 1.1rem);
+          aspect-ratio: 1 / 1;
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: clamp(0.8rem, 2vw, 1rem);
+            aspect-ratio: 1 / 1;
+            mask: url("/wp-content/themes/codeconfig/assets/images/copy-icon.svg")
+              no-repeat center/contain;
+            background: currentColor;
+            transition: all 0.3s ease;
+          }
+        }
+
+        &:active {
+          color: #7f00ff;
+        }
+
+        &.copied-text {
+          .cc-token-copy {
+            &::after {
+              mask: url("/wp-content/themes/codeconfig/assets/images/dusky/checkmark.svg")
+                no-repeat center/contain;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.active-popup {
+    visibility: visible;
+    opacity: 1;
+
+    .cc-popup-fame-font {
+      scale: 1;
+    }
+  }
+}

@@ -1,0 +1,914 @@
+.page-template-t_halloween_offer,
+.page-template-t_halloween_deals {
+  background: #0A0014;
+}
+.page-template-t_halloween_offer .cc-halloween-preloader,
+.page-template-t_halloween_deals .cc-halloween-preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #0A0014;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  transition: opacity 0.5s ease, visibility 0.5s;
+}
+.page-template-t_halloween_offer .meta-title-hero,
+.page-template-t_halloween_deals .meta-title-hero {
+  font-size: clamp(4rem, 10vw, 7.5rem);
+  line-height: 1.2;
+  font-family: "Jolly Lodger", sans-serif;
+}
+.page-template-t_halloween_offer .cc-halloween-gift-box,
+.page-template-t_halloween_deals .cc-halloween-gift-box {
+  width: 180px;
+  aspect-ratio: 9/13;
+}
+@media only screen and (max-width: 768px) {
+  .page-template-t_halloween_offer .cc-halloween-gift-box,
+  .page-template-t_halloween_deals .cc-halloween-gift-box {
+    width: 150px;
+  }
+}
+.page-template-t_halloween_offer .cc-halloween-gift-box-image,
+.page-template-t_halloween_deals .cc-halloween-gift-box-image {
+  width: 70%;
+  aspect-ratio: 1/1;
+  margin: 0 auto;
+  border-radius: 50%;
+  bottom: 15%;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0s;
+}
+.page-template-t_halloween_offer .cc-halloween-gift-box-content,
+.page-template-t_halloween_deals .cc-halloween-gift-box-content {
+  padding: 45px 25px;
+  border-radius: 0 0 10px 10px;
+  background: radial-gradient(circle, #7F00FF 50%, #9933FF 50%);
+  background-size: 365% 360%;
+  background-position: bottom;
+  width: 100%;
+}
+.page-template-t_halloween_offer .cc-halloween-gift-box-content .gift-box-amount,
+.page-template-t_halloween_deals .cc-halloween-gift-box-content .gift-box-amount {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  line-height: 1em;
+  text-wrap: nowrap;
+  font-weight: 600;
+}
+.page-template-t_halloween_offer .cc-halloween-gift-box-content::before,
+.page-template-t_halloween_deals .cc-halloween-gift-box-content::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: url("/wp-content/themes/codeconfig/assets/images/halloween-offer/gift-content-cap.webp") no-repeat center;
+  background-size: 100%;
+  height: 90px;
+  top: calc(0% - 115px);
+  left: 0;
+  transition: transform 1s ease;
+  transform: rotate(0) translateY(0) translateX(0);
+  transform-origin: top center;
+  animation: unset;
+  animation-delay: 0s;
+}
+.page-template-t_halloween_offer .cc-halloween-gift-box-name,
+.page-template-t_halloween_deals .cc-halloween-gift-box-name {
+  font-size: clamp(1rem, 2vw, 1.375rem);
+  color: #FFFFFF;
+  bottom: calc(clamp(35px, 4vw, 45px) * -1);
+  pointer-events: none;
+}
+.page-template-t_halloween_offer .cc-halloween-gift-box:hover .cc-halloween-gift-box-image,
+.page-template-t_halloween_deals .cc-halloween-gift-box:hover .cc-halloween-gift-box-image {
+  transform: translateY(-75px);
+  transition-delay: 1s;
+}
+.page-template-t_halloween_offer .cc-halloween-gift-box:hover .cc-halloween-gift-box-content::before,
+.page-template-t_halloween_deals .cc-halloween-gift-box:hover .cc-halloween-gift-box-content::before {
+  animation: boxShake 1s;
+  transform: rotate(-35deg) translateY(-7rem) translateX(-1.5rem);
+}
+.page-template-t_halloween_offer .cc-hall-btn,
+.page-template-t_halloween_deals .cc-hall-btn {
+  font-size: clamp(1rem, 1vw, 1.125rem);
+  line-height: 1.2em;
+  padding: clamp(10px, 0.75rem, 12px) clamp(18px, 3vw, 25px);
+  display: inline-flex;
+  border-radius: 8px;
+  align-items: center;
+  border: 1px solid;
+  border-color: currentColor;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.page-template-t_halloween_offer .cc-hall-btn.with-icon,
+.page-template-t_halloween_deals .cc-hall-btn.with-icon {
+  gap: 10px;
+}
+.page-template-t_halloween_offer .cc-hall-btn.with-icon::before,
+.page-template-t_halloween_deals .cc-hall-btn.with-icon::before {
+  content: "";
+  width: clamp(16px, 1vw, 18px);
+  aspect-ratio: 1/1;
+  -webkit-mask: url("/wp-content/themes/codeconfig/assets/images/halloween-offer/button-icon.webp");
+          mask: url("/wp-content/themes/codeconfig/assets/images/halloween-offer/button-icon.webp");
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background: currentColor;
+}
+.page-template-t_halloween_offer .cc-hall-btn.secondary-button,
+.page-template-t_halloween_deals .cc-hall-btn.secondary-button {
+  color: #FFFFFF;
+  background: #7F00FF;
+  border-color: #7F00FF;
+}
+.page-template-t_halloween_offer .cc-hall-btn.secondary-button:hover,
+.page-template-t_halloween_deals .cc-hall-btn.secondary-button:hover {
+  background: transparent;
+}
+.page-template-t_halloween_offer .cc-hall-btn.white-button,
+.page-template-t_halloween_deals .cc-hall-btn.white-button {
+  color: #FFFFFF;
+  background: transparent;
+  border-color: #FFFFFF;
+}
+.page-template-t_halloween_offer .cc-hall-btn.white-button:hover,
+.page-template-t_halloween_deals .cc-hall-btn.white-button:hover {
+  background: #7F00FF;
+  border-color: #7F00FF;
+}
+.page-template-t_halloween_offer .cc-hall-btn.dynamic-color,
+.page-template-t_halloween_deals .cc-hall-btn.dynamic-color {
+  color: #FFFFFF;
+  background: rgb(var(--card-color, 127, 0, 255));
+  border-color: rgb(var(--card-color, 127, 0, 255));
+}
+.page-template-t_halloween_offer .cc-hall-btn.dynamic-color:hover,
+.page-template-t_halloween_deals .cc-hall-btn.dynamic-color:hover {
+  background: rgba(var(--card-color, 127, 0, 255), 0.5);
+}
+.page-template-t_halloween_offer .cc-halloween-meta,
+.page-template-t_halloween_deals .cc-halloween-meta {
+  width: 100%;
+  max-width: 570px;
+  color: #FFFFFF;
+}
+.page-template-t_halloween_offer .cc-halloween-moon,
+.page-template-t_halloween_deals .cc-halloween-moon {
+  width: min(560px, 30vw);
+  aspect-ratio: 1/1;
+  background: linear-gradient(179.98deg, #FFFBCD 0.01%, #D777DD 124.03%);
+  border-radius: 50%;
+  z-index: -1;
+  position: sticky;
+  top: calc(var(--header-height, 100px) + 10px);
+}
+.page-template-t_halloween_offer .codeconfig-header,
+.page-template-t_halloween_deals .codeconfig-header {
+  background: transparent;
+  border-color: transparent;
+}
+.page-template-t_halloween_offer .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item a,
+.page-template-t_halloween_deals .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item a {
+  color: #ffffff;
+}
+.page-template-t_halloween_offer .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children::after,
+.page-template-t_halloween_deals .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children::after {
+  border-color: #ffffff;
+}
+.page-template-t_halloween_offer .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.contact-btn a,
+.page-template-t_halloween_deals .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.contact-btn a {
+  background: #7F00FF;
+  gap: 5px;
+  border: 1px solid #7F00FF;
+}
+.page-template-t_halloween_offer .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.contact-btn a::before,
+.page-template-t_halloween_deals .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.contact-btn a::before {
+  content: "";
+  -webkit-mask: url("/wp-content/themes/codeconfig/assets/images/microphone-icon.svg");
+          mask: url("/wp-content/themes/codeconfig/assets/images/microphone-icon.svg");
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  background: #7F00FF;
+  height: 17px;
+  aspect-ratio: 1/1;
+  z-index: 1;
+}
+.page-template-t_halloween_offer .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.contact-btn a::after,
+.page-template-t_halloween_deals .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.contact-btn a::after {
+  content: "";
+  position: absolute;
+  height: 30px;
+  aspect-ratio: 1/1;
+  background: #FFFFFF;
+  left: calc(0% + 5px);
+  border-radius: 50%;
+  z-index: 0;
+}
+.page-template-t_halloween_offer .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item:hover a,
+.page-template-t_halloween_deals .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item:hover a {
+  color: #7F00FF;
+}
+.page-template-t_halloween_offer .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item:hover.menu-item-has-children::after,
+.page-template-t_halloween_deals .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item:hover.menu-item-has-children::after {
+  border-color: #7F00FF;
+}
+.page-template-t_halloween_offer .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item:hover.contact-btn a,
+.page-template-t_halloween_deals .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item:hover.contact-btn a {
+  background: #0A0014;
+}
+@media only screen and (max-width: 1024px) {
+  .page-template-t_halloween_offer .codeconfig-header .header-menu-wrap .main-header-menu,
+  .page-template-t_halloween_deals .codeconfig-header .header-menu-wrap .main-header-menu {
+    background: #0A0014;
+  }
+}
+.page-template-t_halloween_offer .codeconfig-header.sticky,
+.page-template-t_halloween_deals .codeconfig-header.sticky {
+  background: rgba(6, 0, 55, 0.3764705882);
+  border-color: #0A0014;
+}
+.page-template-t_halloween_offer .cc-footer-cta .cc-cta-default-wrap,
+.page-template-t_halloween_deals .cc-footer-cta .cc-cta-default-wrap {
+  background-image: none !important;
+  background: url("/wp-content/themes/codeconfig/assets/images/halloween-offer/cta-mask.webp") no-repeat center/cover, #7F00FF !important;
+}
+.page-template-t_halloween_offer .cc-hal-highlight-text,
+.page-template-t_halloween_deals .cc-hal-highlight-text {
+  color: #7F00FF;
+  background: radial-gradient(121.94% 121.94% at 17.09% 154.39%, #ffffff 30%, #7F00FF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.page-template-t_halloween_offer .cc-halloween-ghost,
+.page-template-t_halloween_deals .cc-halloween-ghost {
+  position: fixed;
+  width: clamp(100px, 11vw, 200px);
+  aspect-ratio: 1/1;
+  background: url("/wp-content/themes/codeconfig/assets/images/halloween-offer/halloween-ghost.webp") no-repeat center center;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 1;
+  right: calc(50% - clamp(100px, 11vw, 200px) / 2);
+  animation: dancingGhost 3s ease-in-out infinite;
+}
+@keyframes dancingGhost {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg) scale(1);
+  }
+  20% {
+    transform: translateY(-10px) translateX(-5px) rotate(-5deg) scale(1.05);
+  }
+  40% {
+    transform: translateY(0) translateX(5px) rotate(5deg) scale(0.95);
+  }
+  60% {
+    transform: translateY(-20px) translateX(-5px) rotate(-5deg) scale(1.05);
+  }
+  80% {
+    transform: translateY(0) translateX(5px) rotate(5deg) scale(1);
+  }
+  100% {
+    transform: translateY(0) translateX(0) rotate(0deg) scale(1);
+  }
+}
+.page-template-t_halloween_offer .cc-hal-section-top,
+.page-template-t_halloween_deals .cc-hal-section-top {
+  padding-top: calc(var(--header-height) + clamp(0.625rem, 3vw, 3rem));
+  height: clamp(70vh, 85vw, 120vh);
+}
+.page-template-t_halloween_offer .cc-hal-sticky,
+.page-template-t_halloween_deals .cc-hal-sticky {
+  position: sticky;
+  top: calc(var(--header-height, 100px) + 10px);
+  z-index: 3;
+}
+.page-template-t_halloween_offer .cc-hal-co-bg,
+.page-template-t_halloween_deals .cc-hal-co-bg {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 3;
+  background-position: bottom;
+  pointer-events: none;
+}
+.page-template-t_halloween_offer .cc-hal-co-overlay,
+.page-template-t_halloween_deals .cc-hal-co-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: linear-gradient(301.53deg, rgba(154, 119, 221, 0.8) -20.25%, rgba(154, 119, 221, 0) 75.85%);
+  animation: thunderFlash 5s ease-in-out infinite;
+}
+@keyframes thunderFlash {
+  0%, 80% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+  81% {
+    opacity: 0.1;
+    filter: brightness(2);
+  }
+  82% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+  84% {
+    opacity: 0;
+    filter: brightness(2.5);
+  }
+  85% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+  87% {
+    opacity: 0.2;
+    filter: brightness(1.8);
+  }
+  89% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+}
+.page-template-t_halloween_offer .cc-hal-co-moon,
+.page-template-t_halloween_deals .cc-hal-co-moon {
+  height: clamp(65vh, 80vw, 110vh);
+  top: 0;
+  bottom: clamp(20%, 22vw, 32%);
+  z-index: 2;
+}
+.page-template-t_halloween_offer:has(.cc-halloween-preloader) .cc-halloween-ghost,
+.page-template-t_halloween_deals:has(.cc-halloween-preloader) .cc-halloween-ghost {
+  z-index: 99999 !important;
+  bottom: calc(50% - clamp(100px, 11vw, 200px) / 2);
+  transition: all 1s ease;
+  filter: opacity(1);
+}
+.page-template-t_halloween_offer:has(.cc-halloween-preloader) .cc-halloween-offer-hero-pumpkin,
+.page-template-t_halloween_deals:has(.cc-halloween-preloader) .cc-halloween-offer-hero-pumpkin {
+  left: -200%;
+  animation: none;
+  transition: all 1s ease;
+}
+
+.cc-halloween-offer-hero__content {
+  gap: clamp(20px, 4vw, 45px);
+  max-width: 450px !important;
+  z-index: 4;
+}
+.cc-halloween-offer-hero__content-meta {
+  font-family: "Jolly Lodger", sans-serif;
+}
+.cc-halloween-offer-hero__content-meta .meta-tagline {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.2;
+  font-family: "Jolly Lodger", sans-serif;
+  margin-bottom: -5px !important;
+}
+.cc-halloween-offer-hero__content-meta .meta-description {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.5;
+  font-family: "Jolly Lodger", sans-serif;
+}
+.cc-halloween-offer-hero__content-token {
+  width: -moz-max-content;
+  width: max-content;
+  padding: clamp(0.5rem, 1vw, 0.8rem) clamp(0.5rem, 1vw, 0.938rem);
+  border: 1px solid rgba(127, 0, 255, 0.5019607843);
+  background: rgba(127, 0, 255, 0.1019607843);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  color: #FFFFFF;
+  gap: 10px;
+}
+.cc-halloween-offer-hero__content-token .cc-hall-token-title {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.cc-halloween-offer-hero__content-token .cc-hall-token-copy {
+  width: clamp(1.5rem, 2vw, 2rem);
+  aspect-ratio: 1/1;
+}
+.cc-halloween-offer-hero__content-token .cc-hall-token-copy::after {
+  content: "";
+  position: absolute;
+  width: clamp(1rem, 2vw, 1.5rem);
+  aspect-ratio: 1/1;
+  -webkit-mask: url("/wp-content/themes/codeconfig/assets/images/copy-icon.svg") no-repeat center/contain;
+          mask: url("/wp-content/themes/codeconfig/assets/images/copy-icon.svg") no-repeat center/contain;
+  background: currentColor;
+  transition: all 0.3s ease;
+}
+.cc-halloween-offer-hero__content-token:active {
+  color: #7F00FF;
+}
+.cc-halloween-offer-hero__content-token.copied-text .cc-hall-token-copy::after {
+  -webkit-mask: url("/wp-content/themes/codeconfig/assets/images/dusky/checkmark.svg") no-repeat center/contain;
+          mask: url("/wp-content/themes/codeconfig/assets/images/dusky/checkmark.svg") no-repeat center/contain;
+}
+.cc-halloween-offer-hero__content-time .cc-countDown {
+  gap: clamp(10px, 2vw, 20px);
+}
+.cc-halloween-offer-hero__content-time .cc-countDown .cc-counter-time {
+  gap: 10px;
+}
+.cc-halloween-offer-hero__content-time .cc-countDown .cc-counter-time h5 {
+  font-size: clamp(1.5rem, 5vw, 2.625rem);
+  line-height: 1em;
+  font-weight: 500;
+  width: clamp(3.5rem, 8vw, 5rem);
+  aspect-ratio: 1/1;
+  border: 1px solid rgba(127, 0, 255, 0.5019607843);
+  border-radius: 14px;
+  background: rgba(127, 0, 255, 0.1019607843);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cc-halloween-offer-hero__content-time .cc-countDown .cc-counter-time span {
+  font-size: clamp(0.5rem, 2vw, 1rem);
+  line-height: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.cc-halloween-offer-hero-bg {
+  background: url("/wp-content/themes/codeconfig/assets/images/halloween-offer/halloween-offer-hero.webp");
+}
+.cc-halloween-offer-hero-bg-overlay-black {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: linear-gradient(150deg, var(--flip-color) -35%, rgba(10, 0, 20, 0) 90%);
+  animation: thunderFlashColor 10s ease-in-out infinite;
+}
+@keyframes thunderFlashColor {
+  0%, 90%, 100% {
+    --flip-color: #0A0014;
+  }
+  91% {
+    --flip-color: #ffffff;
+  }
+  92% {
+    --flip-color: #0A0014;
+  }
+  93% {
+    --flip-color: #f5effa;
+  }
+  94% {
+    --flip-color: #0A0014;
+  }
+  95% {
+    --flip-color: #ffff99;
+  }
+  96% {
+    --flip-color: #0A0014;
+  }
+}
+.cc-halloween-offer-hero-moon {
+  right: 25%;
+}
+@media only screen and (max-width: 1024px) {
+  .cc-halloween-offer-hero-moon {
+    right: 15%;
+  }
+}
+.cc-halloween-offer-hero-moon .cc-halloween-moon {
+  transform: translateY(15%);
+}
+.cc-halloween-offer-hero-ghost {
+  z-index: 4 !important;
+  bottom: calc(0% - clamp(100px, 11vw, 200px) / 2);
+  transition: all 3s ease;
+}
+@media only screen and (max-width: 768px) {
+  .cc-halloween-offer-hero-ghost {
+    bottom: 13%;
+  }
+}
+.cc-halloween-offer-hero-ghost.active-ghost {
+  filter: opacity(0.5);
+  z-index: -1;
+  bottom: 0%;
+}
+.cc-halloween-offer-hero-ghost.right {
+  right: calc(0% + 20px);
+}
+.cc-halloween-offer-hero-ghost.left {
+  right: calc(100% - clamp(100px, 11vw, 200px) - 20px);
+}
+.cc-halloween-offer-hero-ghost.last-section {
+  opacity: 0;
+}
+.cc-halloween-offer-hero-pumpkin {
+  width: clamp(7rem, 20vw, 13rem);
+  aspect-ratio: 74/51;
+  background: url("/wp-content/themes/codeconfig/assets/images/halloween-offer/Pumpkin.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 3;
+  left: 0;
+  transition: all 2s ease 1s;
+  animation: pumpkinJump 10s ease-in-out infinite 2s;
+}
+@keyframes pumpkinJump {
+  0% {
+    transform: translateY(0) scale(1, 1);
+  }
+  2% {
+    transform: translateY(-60px) scale(1.1, 0.9);
+  }
+  4% {
+    transform: translateY(0) scale(0.9, 1.1);
+  }
+  6% {
+    transform: translateY(-40px) scale(1.05, 0.95);
+  }
+  8% {
+    transform: translateY(0) scale(1, 1);
+  }
+  10% {
+    transform: translateY(-30px) scale(1.07, 0.9);
+  }
+  12% {
+    transform: translateY(0) scale(0.9, 1.1);
+  }
+  14% {
+    transform: translateY(-10px) scale(1.02, 1.01);
+  }
+  16% {
+    transform: translateY(0) scale(1, 1);
+  }
+  80% {
+    transform: translateY(0) scale(1, 1);
+  }
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+}
+
+.cc-halloween-products::before,
+.cc-halloween-cta::before {
+  display: none;
+}
+.cc-halloween-products::after,
+.cc-halloween-cta::after {
+  content: "";
+  position: absolute;
+  background-image: url("/wp-content/themes/codeconfig/assets/images/offer-page-bg-dots.svg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  top: 0;
+}
+.cc-halloween-products .products-wrapper,
+.cc-halloween-products .offers-cta-wrapper,
+.cc-halloween-cta .products-wrapper,
+.cc-halloween-cta .offers-cta-wrapper {
+  position: relative;
+  z-index: 4;
+}
+
+.cc-halloween-cta {
+  margin: 0 !important;
+  padding: clamp(3rem, 10vw, 9rem) 0;
+}
+
+.cc-halloween-deals-hero__content-tagline {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 1.2;
+  font-family: "Jolly Lodger", sans-serif;
+}
+.cc-halloween-deals-hero__content-description {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  line-height: 1.5;
+  font-family: "Jolly Lodger", sans-serif;
+}
+.cc-halloween-deals-hero__content .cc-halloween-button-group {
+  padding-top: clamp(1rem, 3vw, 2rem);
+  gap: clamp(10px, 2vw, 20px);
+}
+.cc-halloween-deals-hero-bg {
+  background: url("/wp-content/themes/codeconfig/assets/images/halloween-offer/halloween-deals-hero.webp");
+}
+.cc-halloween-deals-hero-moon {
+  right: 13%;
+}
+@media only screen and (max-width: 1024px) {
+  .cc-halloween-deals-hero-moon {
+    right: 7%;
+  }
+}
+.cc-halloween-deals-hero-moon .cc-halloween-moon {
+  transform: translateY(15%);
+}
+.cc-halloween-deals-hero-ghost {
+  bottom: calc(0% - clamp(100px, 11vw, 200px) / 2);
+  z-index: -1;
+  filter: opacity(0);
+  transition: all 3s ease;
+}
+.cc-halloween-deals-hero-ghost.active-ghost {
+  filter: opacity(0.06);
+}
+.cc-halloween-deals-hero-ghost.right {
+  right: calc(0% + 20px);
+}
+.cc-halloween-deals-hero-ghost.left {
+  right: calc(100% - clamp(100px, 11vw, 200px) - 20px);
+}
+
+.cc-halloween-deals-gift-box {
+  padding: clamp(3rem, 20vw, 2rem) 0 clamp(3rem, 50vw, 2rem);
+  z-index: 6;
+}
+.cc-halloween-deals-gift-box .cc-hal-gift-box-wrapper {
+  gap: clamp(15px, 3vw, 40px);
+}
+@keyframes boxShake {
+  0% {
+    transform: rotate(0deg) translateY(0);
+  }
+  10% {
+    transform: rotate(-5deg) translateY(0);
+  }
+  20% {
+    transform: rotate(5deg) translateY(0);
+  }
+  30% {
+    transform: rotate(-3deg) translateY(0);
+  }
+  40% {
+    transform: rotate(3deg) translateY(0);
+  }
+  50% {
+    transform: rotate(0deg) translateY(0);
+  }
+}
+
+.cc-halloween-deals-area {
+  scroll-margin-top: 15vh;
+}
+.cc-halloween-deals-area .deals-heading-wrapper {
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.cc-halloween-deals-area .deals-heading-wrapper .deals-heading {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: #FFFFFF;
+}
+.cc-halloween-deals-area .deals-heading-wrapper .view-all-link {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: #FFFFFF;
+  padding-right: 30px;
+}
+.cc-halloween-deals-area .deals-heading-wrapper .view-all-link::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 16px;
+  -webkit-mask: url("/wp-content/themes/codeconfig/assets/images/halloween-offer/right-arrow.png") no-repeat center;
+          mask: url("/wp-content/themes/codeconfig/assets/images/halloween-offer/right-arrow.png") no-repeat center;
+  background: currentColor;
+  right: 0;
+  transition: transform 0.3s ease;
+}
+.cc-halloween-deals-area .deals-heading-wrapper .view-all-link:hover {
+  color: #7F00FF;
+}
+.cc-halloween-deals-area .deals-heading-wrapper .view-all-link:hover::after {
+  transform: rotate(-35deg);
+}
+.cc-halloween-deals-area .cc-deals-wrapper-card {
+  gap: 20px;
+}
+@media only screen and (max-width: 575px) {
+  .cc-halloween-deals-area .cc-deals-wrapper-card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.cc-halloween-deals-area .cc-deals-wrapper-card .single-card {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(var(--card-color), 0.3);
+  background: linear-gradient(180deg, rgba(10, 0, 20, 0.1) 0%, rgba(var(--card-color), 0.1) 100%);
+  backdrop-filter: blur(10px);
+}
+.cc-halloween-deals-area .cc-deals-wrapper-card .single-card .card-image-area {
+  overflow: hidden;
+  aspect-ratio: 16/9;
+}
+.cc-halloween-deals-area .cc-deals-wrapper-card .single-card .card-image-area img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cc-halloween-deals-area .cc-deals-wrapper-card .single-card .card-image-area:hover img {
+  scale: 1.02;
+}
+.cc-halloween-deals-area .cc-deals-wrapper-card .single-card .card-content {
+  padding: 20px 30px 80px;
+}
+@media only screen and (max-width: 768px) {
+  .cc-halloween-deals-area .cc-deals-wrapper-card .single-card .card-content {
+    padding: 20px 20px 90px;
+  }
+}
+.cc-halloween-deals-area .cc-deals-wrapper-card .single-card .card-content .content-title {
+  color: #FFFFFF;
+  font-size: clamp(1.2rem, 2vw, 1.625rem);
+  line-height: 1.3em;
+}
+.cc-halloween-deals-area .cc-deals-wrapper-card .single-card .card-content .content-description {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  color: rgba(255, 255, 255, 0.7411764706);
+}
+.cc-halloween-deals-area .cc-deals-wrapper-card .single-card .card-content .content-feature {
+  padding-left: 5px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+.cc-halloween-deals-area .cc-deals-wrapper-card .single-card .card-content .content-feature li {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 8px;
+  color: #FFFFFF;
+}
+.cc-halloween-deals-area .cc-deals-wrapper-card .single-card .card-content .content-feature li::after, .cc-halloween-deals-area .cc-deals-wrapper-card .single-card .card-content .content-feature li::before {
+  content: "";
+  position: absolute;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.cc-halloween-deals-area .cc-deals-wrapper-card .single-card .card-content .content-feature li::before {
+  height: 8px;
+  background: rgba(var(--card-color), 1);
+  left: -1px;
+  top: 10px;
+}
+.cc-halloween-deals-area .cc-deals-wrapper-card .single-card .card-content .content-feature li::after {
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid rgba(var(--card-color), 1);
+  left: -6px;
+  top: 5px;
+}
+.cc-halloween-deals-area .cc-deals-wrapper-card .single-card .card-content .cc-cr-button {
+  position: absolute;
+  bottom: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .cc-halloween-deals-area .cc-deals-wrapper-card .single-card .card-content .cc-cr-button {
+    bottom: 20px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .cc-halloween-deals-area .cc-deals-wrapper-card .single-card .card-content .cc-cr-button {
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: unset;
+    padding-right: 20px;
+  }
+}
+.cc-halloween-deals-area .cc-deals-wrapper-card .single-card.has-no-image {
+  display: flex;
+  align-items: center;
+  overflow: visible;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: clamp(10px, 3vw, 20px);
+}
+.cc-halloween-deals-area .cc-deals-wrapper-card .single-card.has-no-image .card-content {
+  flex: 1 1 60%;
+  padding: 0 0 60px 0 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cc-halloween-deals-area .cc-deals-wrapper-card .single-card.has-no-image .content-feature {
+  display: none;
+}
+.cc-halloween-deals-area .cc-deals-wrapper-card .single-card.has-no-image .cc-halloween-gift-box {
+  height: 200px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.cc-halloween-deals-area .content-type-wrapper {
+  display: inline-flex;
+  font-size: 16px;
+  line-height: 16px;
+  border: 1px solid rgba(var(--card-color), 0.2);
+  background: rgba(var(--card-color), 0.1);
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+.cc-halloween-deals-area .deals-details-wrapper {
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.cc-halloween-deals-area .deals-details-wrapper .deals-details {
+  border: 1px solid rgba(var(--card-color), 0.3);
+  flex: 1 0 60px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.cc-halloween-deals-area .deals-details-wrapper .deals-details .cr-det {
+  padding: 5px 0;
+  font-size: 14px;
+  line-height: 14px;
+}
+.cc-halloween-deals-area .deals-details-wrapper .deals-details .det-title {
+  background: transparent;
+  font-weight: 400;
+  color: rgba(var(--card-color), 1);
+}
+.cc-halloween-deals-area .deals-details-wrapper .deals-details .det-data {
+  background: rgba(var(--card-color), 0.15);
+  border-top: 1px solid rgba(var(--card-color), 0.3);
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.cc-halloween-deals-area.hal-popular-deals .cc-deals-wrapper-card {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  grid-template-areas: "card-1 card-2" "card-1 card-3" "card-4 card-5";
+}
+@media only screen and (max-width: 1024px) {
+  .cc-halloween-deals-area.hal-popular-deals .cc-deals-wrapper-card {
+    grid-template-areas: unset;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cc-halloween-deals-area.hal-popular-deals .cc-deals-wrapper-card .single-card:nth-child(1) {
+    grid-area: card-1;
+  }
+  .cc-halloween-deals-area.hal-popular-deals .cc-deals-wrapper-card .single-card:nth-child(2) {
+    grid-area: card-2;
+  }
+  .cc-halloween-deals-area.hal-popular-deals .cc-deals-wrapper-card .single-card:nth-child(3) {
+    grid-area: card-3;
+  }
+  .cc-halloween-deals-area.hal-popular-deals .cc-deals-wrapper-card .single-card:nth-child(4) {
+    grid-area: card-4;
+  }
+  .cc-halloween-deals-area.hal-popular-deals .cc-deals-wrapper-card .single-card:nth-child(5) {
+    grid-area: card-5;
+  }
+  .cc-halloween-deals-area.hal-popular-deals .cc-deals-wrapper-card .single-card:nth-child(6) {
+    grid-area: card-6;
+  }
+}
+.cc-halloween-deals-area.hal-popular-deals .cc-deals-wrapper-card .single-card .card-content {
+  padding: 30px 30px 80px;
+}
+.cc-halloween-deals-area.hal-popular-deals .cc-deals-wrapper-card .single-card:nth-child(2), .cc-halloween-deals-area.hal-popular-deals .cc-deals-wrapper-card .single-card:nth-child(3), .cc-halloween-deals-area.hal-popular-deals .cc-deals-wrapper-card .single-card:nth-child(4), .cc-halloween-deals-area.hal-popular-deals .cc-deals-wrapper-card .single-card:nth-child(5) {
+  background: linear-gradient(90deg, rgba(10, 0, 20, 0.1) 0%, rgba(var(--card-color), 0.1) 100%);
+}
+.cc-halloween-deals-area.hal-best-deals .cc-deals-wrapper-card, .cc-halloween-deals-area.hal-others .cc-deals-wrapper-card {
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.cc-halloween-deals-area.hal-best-deals .cc-deals-wrapper-card .single-card .card-content, .cc-halloween-deals-area.hal-others .cc-deals-wrapper-card .single-card .card-content {
+  padding: 20px 20px 90px;
+}
+.cc-halloween-deals-area.hal-best-deals .cc-deals-wrapper-card .single-card .card-content .cc-cr-button, .cc-halloween-deals-area.hal-others .cc-deals-wrapper-card .single-card .card-content .cc-cr-button {
+  bottom: 20px;
+}/*# sourceMappingURL=halloween-style.css.map */

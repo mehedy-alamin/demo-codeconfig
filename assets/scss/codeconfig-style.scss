@@ -1,0 +1,13 @@
+@use "./globals/index" as *;
+@use "./globals/typography" as *;
+
+
+@forward "./globals/header";
+@forward "./globals/footer";
+
+@forward "./products-style/google-drive-product-page.scss";
+
+
+/*==============================================
+* Common css START
+================================================ */
