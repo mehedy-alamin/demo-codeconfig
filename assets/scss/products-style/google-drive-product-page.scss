@@ -70,23 +70,23 @@ body {
   h1,
   h2 {
     font-size: clamp(30px, 4vw, 54px);
-    line-height: clamp(40px, 4.8vw, 65px);
+    line-height: 120%;
     text-transform: capitalize;
   }
 
   h3 {
     font-size: clamp(26px, 3.5vw, 44px);
-    line-height: clamp(36px, 4.4vw, 54px);
+    line-height: 120%;
   }
 
   h4 {
     font-size: clamp(24px, 3vw, 34px);
-    line-height: clamp(34px, 4.45vw, 54px);
+    line-height: 120%;
   }
 
   h5 {
     font-size: clamp(18px, 2vw, 24px);
-    line-height: clamp(24px, 2.5vw, 32px);
+    line-height: 120%;
   }
 
   .section-title-box {
@@ -1326,7 +1326,6 @@ body {
 }
 // Animation Keyframes for Banner Particles end
 
-
 // Google drive footer CTA style
 .ccpigd-footer-cta {
   .ccpigd-container {
@@ -1335,7 +1334,7 @@ body {
       border: 1px solid $ccpigd-border;
       border-radius: $ccpigd-primary-radius;
       background-color: #00AC470D;
-      background-image: url("/wp-content/themes/codeconfig/assets/images/google-drive/igd-cta-bg.svg");
+      background-image: url(../images/google-drive/igd-cta-bg.svg);
       background-position: top center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -1746,6 +1745,52 @@ body {
         &::after {
         box-shadow: 0px 0px 4px 1px #ffffff;
         }
+      }
+    }
+  }
+}
+
+// Google drive single feature page style start //
+.ccpigd-single-feature-section {
+  .ccpigd-row {
+    column-gap: 22px;
+    row-gap: 30px;
+    padding-bottom: clamp(40px, 5vw, 80px);
+    border-bottom: 2px solid $ccpigd-border;
+
+    @include breakpoint(1024) {
+      flex-wrap: wrap;
+    }
+
+    .content-box {
+      width: 50%;
+
+      @include breakpoint(1024) {
+        width: 100%;
+        text-align: center;
+      }
+
+      .ccpigd-hero-sub-title {
+        
+        @include minbreakpoint(1025){
+          margin-left: 0;
+        }
+      }
+      .ccpigd-btn-group {
+        @include minbreakpoint(1025){
+          justify-content: flex-start;
+        }
+      }
+    }
+    .image-box {
+      width: 50%;
+
+      @include breakpoint(1024) {
+        width: 100%;
+      }
+
+      img {
+        border-radius: clamp(6px, 1vw, 16px);
       }
     }
   }
