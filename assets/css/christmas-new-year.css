@@ -215,17 +215,13 @@ svg {
   align-items: end;
 }
 
+.align-start {
+  align-items: start !important;
+}
+
 .space-between {
   justify-content: space-between;
   gap: 10px;
-}
-
-.justify-content-end {
-  justify-content: flex-end;
-}
-
-.justify-center {
-  justify-content: center;
 }
 
 .flex-center, .cc-christmas-new-year-announcement-bar .campaign-container .cc-campaign-close::after, .cc-christmas-new-year-announcement-bar .campaign-container .cc-campaign-close::before {
@@ -234,8 +230,16 @@ svg {
   justify-content: center;
 }
 
-.flex-end {
-  justify-content: end;
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-start {
+  justify-content: flex-start !important;
 }
 
 .flex-col {

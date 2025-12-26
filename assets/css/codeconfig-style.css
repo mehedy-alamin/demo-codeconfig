@@ -215,17 +215,13 @@ svg {
   align-items: end;
 }
 
+.align-start {
+  align-items: start !important;
+}
+
 .space-between {
   justify-content: space-between;
   gap: 10px;
-}
-
-.justify-content-end {
-  justify-content: flex-end;
-}
-
-.justify-center, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item {
-  justify-content: center;
 }
 
 .flex-center, .ccpigd-section .ccpigd-btn-group, .ccpigd-section .ccpigd-btn, .ccpigd-section .ccpigd-list-mark ul li, .ccpigd-section .ccpigd-icon-box .ccpigd-box-icon, .cc-google-drive-header .cc-google-drive-main-header .menu-site .main-header-menu .menu-item.ccpigd-header-btn a, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-question .ccpigd-dropdown-arrow, .cc-review-slider-window .cc-review-card .cc-product-image, .cc-review-slider-window .cc-review-window-close, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.contact-btn a:before, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu .megamenu-column ul li.menu-item a .image-wrapper {
@@ -234,8 +230,16 @@ svg {
   justify-content: center;
 }
 
-.flex-end {
-  justify-content: end;
+.justify-center, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-start {
+  justify-content: flex-start !important;
 }
 
 .flex-col, .ccpigd-bg-particle-wrapper {
