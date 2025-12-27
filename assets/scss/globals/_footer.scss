@@ -540,6 +540,7 @@
       }
 
       &.products {
+
         &.footer-menu-tab-mobile {
           padding: 30px 0 20px;
 
@@ -563,6 +564,78 @@
       }
     }
   }
+// Products menu css used in footer product menu & contact page product menu
+.cc-products-menu {
+  ul {
+    @extend .unstyle;
+
+    li {
+      width: fit-content;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+
+        @include breakpoint(575) {
+          margin-bottom: 15px;
+        }
+      }
+
+      a {
+        @extend .d-flex, .align-center, .relative;
+        gap: 10px;
+        width: fit-content;
+
+        &::after {
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 1px;
+          background: var(--product-color) !important;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          bottom: -5px;
+          @extend .transition;
+        }
+
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+
+        .image-wrapper {
+          @extend .flex-center;
+
+          img {
+            width: 100%;
+            max-width: 30px;
+          }
+        }
+
+        span {
+          @include font(20, 22);
+          font-weight: 400;
+          color: $text;
+
+          @include breakpoint(575) {
+            @include font(18, 20);
+          }
+        }
+
+        .product-status {
+          @include font(14, 14);
+          font-weight: 400;
+          color: #fff;
+          background: var(--product-color);
+          border-radius: 100px;
+          padding: 6px 10px;
+        }
+      }
+    }
+  }
+}
+
 
   .copyright {
     .cc-scroll-top-btn {
@@ -593,7 +666,7 @@
       .scroll-top-btn-icon {
         width: 16px;
         height: 10px;
-        mask: url(./../images/up-arrow.svg);
+        mask: url("../images/google-drive/up-arrow.svg");
         mask-size: cover;
         mask-repeat: no-repeat;
         mask-position: center;
@@ -812,5 +885,17 @@
         top: 125px;
       }
     }
+  }
+}
+
+@keyframes cc-scroll-button-animation {
+  0% {
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0, -10px);
+    opacity: 1;
   }
 }

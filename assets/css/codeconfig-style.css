@@ -187,7 +187,7 @@ svg {
   display: none !important;
 }
 
-.d-flex, .ccpigd-section .feature-content ul, .ccpigd-bg-particle-wrapper, .ccpigd-download-popup-section .ccpigd-download-popup .ccpigd-download-popup-content .free-downolad-form label:has(input[type=checkbox]), .codeconfig-header .header-menu-wrap .main-header-menu, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.contact-btn a, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu .megamenu-column ul li.menu-item a {
+.d-flex, .ccpigd-section .feature-content ul, .ccpigd-bg-particle-wrapper, .ccpigd-download-popup-section .ccpigd-download-popup .ccpigd-download-popup-content .free-downolad-form label:has(input[type=checkbox]), .cc-footer .cc-products-menu ul li a, .codeconfig-header .header-menu-wrap .main-header-menu, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.contact-btn a, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu .megamenu-column ul li.menu-item a {
   display: flex;
 }
 
@@ -207,7 +207,7 @@ svg {
   text-align: right;
 }
 
-.align-center, .codeconfig-header .header-menu-wrap .main-header-menu, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.contact-btn a {
+.align-center, .cc-footer .cc-products-menu ul li a, .codeconfig-header .header-menu-wrap .main-header-menu, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.contact-btn a {
   align-items: center;
 }
 
@@ -224,7 +224,7 @@ svg {
   gap: 10px;
 }
 
-.flex-center, .ccpigd-section .ccpigd-btn-group, .ccpigd-section .ccpigd-btn, .ccpigd-section .ccpigd-list-mark ul li, .ccpigd-section .ccpigd-icon-box .ccpigd-box-icon, .cc-google-drive-header .cc-google-drive-main-header .menu-site .main-header-menu .menu-item.ccpigd-header-btn a, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-question .ccpigd-dropdown-arrow, .cc-review-slider-window .cc-review-card .cc-product-image, .cc-review-slider-window .cc-review-window-close, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.contact-btn a:before, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu .megamenu-column ul li.menu-item a .image-wrapper {
+.flex-center, .ccpigd-section .ccpigd-btn-group, .ccpigd-section .ccpigd-btn, .ccpigd-section .ccpigd-list-mark ul li, .ccpigd-section .ccpigd-icon-box .ccpigd-box-icon, .cc-google-drive-header .cc-google-drive-main-header .menu-site .main-header-menu .menu-item.ccpigd-header-btn a, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-question .ccpigd-dropdown-arrow, .cc-footer .cc-products-menu ul li a .image-wrapper, .cc-review-slider-window .cc-review-card .cc-product-image, .cc-review-slider-window .cc-review-window-close, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.contact-btn a:before, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu .megamenu-column ul li.menu-item a .image-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -263,11 +263,11 @@ svg {
   overflow: hidden;
 }
 
-.unstyle, .codeconfig-header .header-menu-wrap .main-header-menu {
+.unstyle, .cc-footer .cc-products-menu ul, .codeconfig-header .header-menu-wrap .main-header-menu {
   padding: 0;
   margin: 0;
 }
-.unstyle li, .codeconfig-header .header-menu-wrap .main-header-menu li {
+.unstyle li, .cc-footer .cc-products-menu ul li, .codeconfig-header .header-menu-wrap .main-header-menu li {
   list-style: none;
 }
 
@@ -279,11 +279,11 @@ svg {
   cursor: pointer;
 }
 
-.transition, .ccpigd-section .ccpigd-btn, .ccpigd-section .ccpigd-btn.icon::before, .cc-google-drive-header .cc-google-drive-main-header .menu-site .main-header-menu .menu-item.ccpigd-header-btn a, .cc-google-drive-header .cc-google-drive-main-header .menu-site .main-header-menu .menu-item.ccpigd-header-btn a:before, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-header .buttons button .button-icon, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-header .buttons button .button-text, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-body .ccpigd-tab-content, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-body .ccpigd-tab-content:after, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-question .ccpigd-dropdown-arrow, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-question .ccpigd-dropdown-arrow::after, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-question .ccpigd-dropdown-arrow::before, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-answer a, .ccpigd-download-popup-section .ccpigd-download-popup .ccpigd-popup-close::before, .ccpigd-download-popup-section .ccpigd-download-popup .ccpigd-popup-close::after, .cc-footer .copyright .cc-scroll-top-btn, .cc-footer .copyright .copyright-payment p a, .cc-review-slider-window, .cc-review-slider-window .cc-review-window-close, .cc-review-slider-window .cc-review-window-close span, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item a, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.contact-btn a, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children::after, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu::before, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu .megamenu-column ul li.menu-item a, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu .megamenu-column ul li.menu-item a::after, body #cc-header {
+.transition, .ccpigd-section .ccpigd-btn, .ccpigd-section .ccpigd-btn.icon::before, .cc-google-drive-header .cc-google-drive-main-header .menu-site .main-header-menu .menu-item.ccpigd-header-btn a, .cc-google-drive-header .cc-google-drive-main-header .menu-site .main-header-menu .menu-item.ccpigd-header-btn a:before, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-header .buttons button .button-icon, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-header .buttons button .button-text, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-body .ccpigd-tab-content, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-body .ccpigd-tab-content:after, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-question .ccpigd-dropdown-arrow, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-question .ccpigd-dropdown-arrow::after, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-question .ccpigd-dropdown-arrow::before, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-answer a, .ccpigd-download-popup-section .ccpigd-download-popup .ccpigd-popup-close::before, .ccpigd-download-popup-section .ccpigd-download-popup .ccpigd-popup-close::after, .cc-footer .cc-products-menu ul li a::after, .cc-footer .copyright .cc-scroll-top-btn, .cc-footer .copyright .copyright-payment p a, .cc-review-slider-window, .cc-review-slider-window .cc-review-window-close, .cc-review-slider-window .cc-review-window-close span, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item a, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.contact-btn a, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children::after, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu::before, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu .megamenu-column ul li.menu-item a, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu .megamenu-column ul li.menu-item a::after, body #cc-header {
   transition: all 0.3s ease;
 }
 
-.relative, .ccpigd-section .ccpigd-btn-group, .ccpigd-section .ccpigd-btn.icon, .ccpigd-section .ccpigd-list-mark ul li, .ccpigd-section .ccpigd-icon-box .ccpigd-box-icon, .cc-google-drive-header .cc-google-drive-main-header .menu-site .main-header-menu .menu-item.ccpigd-header-btn a, .ccpigd-hero-section .ccpigd-hero-tab, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-header .buttons button, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-body .ccpigd-tab-content, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-question .ccpigd-dropdown-arrow, .ccpigd-footer-cta .ccpigd-container .ccpigd-footer-cta-wrapper .section-title-box, .cc-review-slider-window, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.contact-btn a, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu .megamenu-column ul li.menu-item a {
+.relative, .ccpigd-section .ccpigd-btn-group, .ccpigd-section .ccpigd-btn.icon, .ccpigd-section .ccpigd-list-mark ul li, .ccpigd-section .ccpigd-icon-box .ccpigd-box-icon, .cc-google-drive-header .cc-google-drive-main-header .menu-site .main-header-menu .menu-item.ccpigd-header-btn a, .ccpigd-hero-section .ccpigd-hero-tab, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-header .buttons button, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-body .ccpigd-tab-content, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-question .ccpigd-dropdown-arrow, .ccpigd-footer-cta .ccpigd-container .ccpigd-footer-cta-wrapper .section-title-box, .cc-footer .cc-products-menu ul li a, .cc-review-slider-window, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.contact-btn a, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu .megamenu-column ul li.menu-item a {
   position: relative;
 }
 
@@ -1281,6 +1281,62 @@ body #cc-header.sticky-bar, body #cc-header.sticky-hero, body #cc-header.ccp-mob
     display: none;
   }
 }
+.cc-footer .cc-products-menu ul li {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.cc-footer .cc-products-menu ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 575px) {
+  .cc-footer .cc-products-menu ul li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+.cc-footer .cc-products-menu ul li a {
+  gap: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.cc-footer .cc-products-menu ul li a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 1px;
+  background: var(--product-color) !important;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -5px;
+}
+.cc-footer .cc-products-menu ul li a:hover::after {
+  width: 100%;
+}
+.cc-footer .cc-products-menu ul li a .image-wrapper img {
+  width: 100%;
+  max-width: 30px;
+}
+.cc-footer .cc-products-menu ul li a span {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #3c4770;
+}
+@media only screen and (max-width: 575px) {
+  .cc-footer .cc-products-menu ul li a span {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+.cc-footer .cc-products-menu ul li a .product-status {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #fff;
+  background: var(--product-color);
+  border-radius: 100px;
+  padding: 6px 10px;
+}
 .cc-footer .copyright .cc-scroll-top-btn {
   cursor: pointer;
   position: absolute;
@@ -1308,8 +1364,8 @@ body #cc-header.sticky-bar, body #cc-header.sticky-hero, body #cc-header.ccp-mob
 .cc-footer .copyright .cc-scroll-top-btn .scroll-top-btn-icon {
   width: 16px;
   height: 10px;
-  -webkit-mask: url(./../images/up-arrow.svg);
-          mask: url(./../images/up-arrow.svg);
+  -webkit-mask: url("../images/google-drive/up-arrow.svg");
+          mask: url("../images/google-drive/up-arrow.svg");
   -webkit-mask-size: cover;
           mask-size: cover;
   -webkit-mask-repeat: no-repeat;
@@ -1496,6 +1552,16 @@ body #cc-header.sticky-bar, body #cc-header.sticky-hero, body #cc-header.ccp-mob
   top: 125px;
 }
 
+@keyframes cc-scroll-button-animation {
+  0% {
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, -10px);
+    opacity: 1;
+  }
+}
 body {
   background: #00130b;
   font-family: "DM Sans", sans-serif;
