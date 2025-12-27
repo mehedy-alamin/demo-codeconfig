@@ -3103,6 +3103,24 @@ body {
   border-radius: clamp(6px, 1vw, 16px);
 }
 
+.ccpigd-demo-feature .demo-feature-list {
+  gap: clamp(20px, 3vw, 35px);
+}
+.ccpigd-demo-feature .demo-feature-list .demo-feature-item {
+  width: 100%;
+  padding: clamp(20px, 3vw, 40px);
+  background: rgba(0, 172, 71, 0.0509803922);
+  border: 1px solid rgba(0, 172, 71, 0.2);
+  border-radius: clamp(10px, 2vw, 28px);
+}
+.ccpigd-demo-feature .demo-feature-list .demo-feature-item .demo-feature-shortcode {
+  margin-top: clamp(20px, 3.5vw, 50px);
+  padding: clamp(20px, 2.2vw, 24px);
+  background: #00150D;
+  border: 1px solid rgba(0, 172, 71, 0.2);
+  border-radius: clamp(4px, 1vw, 16px);
+}
+
 /*==============================================
 * Common css START
 ================================================ *//*# sourceMappingURL=codeconfig-style.css.map */

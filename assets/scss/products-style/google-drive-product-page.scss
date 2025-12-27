@@ -1795,3 +1795,24 @@ body {
     }
   }
 }
+.ccpigd-demo-feature {
+  .demo-feature-list {
+    gap: clamp(20px, 3vw, 35px);
+
+    .demo-feature-item {
+      width: 100%;
+      padding: clamp(20px, 3vw, 40px);
+      background: $ccpigd-bg;
+      border: 1px solid $ccpigd-border;
+      border-radius: clamp(10px, 2vw, 28px);
+
+      .demo-feature-shortcode {
+        margin-top: clamp(20px, 3.5vw, 50px);
+        padding: clamp(20px, 2.2vw, 24px);
+        background: #00150D;
+        border: 1px solid $ccpigd-border;
+        border-radius: clamp(4px, 1vw, 16px);
+      }
+    }
+  }
+}
