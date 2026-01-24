@@ -170,26 +170,6 @@
 </footer>
 <!-- Footer End -->
 
-<section class="ccpigd-section ccpigd-download-popup-section flex-center transition" role="dialog" aria-modal="true" aria-labelledby="download-popup-title" aria-hidden="true">
-    <div class="ccpigd-download-popup">
-        <button class="d-flex align-center absolute ccpigd-popup-close-btn ccpigd-popup-close" type="button" aria-label="<?php echo esc_attr__('Close popup', 'demo-codeconfig'); ?>">
-        </button>
-
-        <div class="text-center ccpigd-download-popup-content relative">
-            <h3 id="download-popup-title"><?php echo esc_html__('Are You Ready to Integrate Your Google Drive', 'demo-codeconfig'); ?></h3>
-            <p><?php echo esc_html__('Ready to simplify your file management? Get started now and experience seamless Google Drive integration with WordPress—effortless, fast, and secure. Try it today!', 'demo-codeconfig'); ?></p>
-
-            <div class="free-downolad-form">
-                <a href="<?php echo esc_url('https://downloads.wordpress.org/plugin/integration-google-drive.zip'); ?>"
-                    class="ccpigd-btn primary icon icon-wordpress field-btn ccpigd-popup-close-btn"
-                    target="_blank" rel="noopener noreferrer">
-                    <?php echo esc_html__('Free Download', 'demo-codeconfig'); ?>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
 <?php wp_footer(); ?>
 </body>
 

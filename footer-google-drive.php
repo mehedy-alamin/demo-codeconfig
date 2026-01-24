@@ -181,7 +181,7 @@ if (!empty($ccp_free_download_link)):
     $ccp_free_download_link_url = $ccp_free_download_link['url'];
     $free_download_form = $download_popup_box['form_id'] ?? '';
 ?>
-    <section class="db-section ccp-download-popup-section flex-center transition"
+    <section class="ccpigd-section ccp-download-popup-section ccpigd-download-popup-section flex-center transition"
         role="dialog"
         aria-modal="true"
         aria-labelledby="download-popup-title"
@@ -199,12 +199,12 @@ if (!empty($ccp_free_download_link)):
                 <p><?php echo esc_html($download_popup_box['description'] ?? ''); ?></p>
                 <a style="display: none;" id="ccp-free-download-link-url" href="<?php echo esc_url($ccp_free_download_link_url); ?>">Demo</a>
 
-                <div class="free-downolad-form">
+                <div class="free-downolad-form flex-center">
                     <?php if (!empty($free_download_form)): ?>
                         <?php echo do_shortcode($free_download_form); ?>
                     <?php elseif (!empty($ccp_free_download_link_url)): ?>
                         <a href="<?php echo esc_url($ccp_free_download_link_url, array('http', 'https')); ?>"
-                            class="ccpidb-btn primary icon icon-wordpress field-btn ccp-popup-close-btn"
+                            class="ccpigd-btn primary icon icon-wordpress field-btn ccp-popup-close-btn"
                             <?php if (($ccp_free_download_link['target'] ?? '_self') === '_blank'): ?>
                             target="_blank" rel="noopener noreferrer"
                             <?php endif; ?>>
