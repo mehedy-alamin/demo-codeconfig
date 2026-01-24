@@ -187,7 +187,7 @@ svg {
   display: none !important;
 }
 
-.d-flex, .ccpigd-section .feature-content ul, .ccpigd-bg-particle-wrapper, .ccpigd-download-popup-section .ccpigd-download-popup .ccpigd-download-popup-content .free-downolad-form label:has(input[type=checkbox]), .cc-footer .cc-products-menu ul li a, .codeconfig-header .header-menu-wrap .main-header-menu, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.contact-btn a, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu .megamenu-column ul li.menu-item a {
+.d-flex, .ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content .free-downolad-form label:has(input[type=checkbox]), .ccpigd-section .feature-content ul, .ccpigd-bg-particle-wrapper, .ccpigd-download-popup-section .ccpigd-download-popup .ccpigd-download-popup-content .free-downolad-form label:has(input[type=checkbox]), .cc-footer .cc-products-menu ul li a, .codeconfig-header .header-menu-wrap .main-header-menu, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.contact-btn a, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu .megamenu-column ul li.menu-item a {
   display: flex;
 }
 
@@ -279,7 +279,7 @@ svg {
   cursor: pointer;
 }
 
-.transition, .ccpigd-section .ccpigd-btn, .ccpigd-section .ccpigd-btn.icon::before, .cc-google-drive-header .cc-google-drive-main-header .menu-site .main-header-menu .menu-item.ccpigd-header-btn a, .cc-google-drive-header .cc-google-drive-main-header .menu-site .main-header-menu .menu-item.ccpigd-header-btn a:before, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-header .buttons button .button-icon, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-header .buttons button .button-text, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-body .ccpigd-tab-content, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-body .ccpigd-tab-content:after, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-question .ccpigd-dropdown-arrow, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-question .ccpigd-dropdown-arrow::after, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-question .ccpigd-dropdown-arrow::before, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-answer a, .ccpigd-download-popup-section .ccpigd-download-popup .ccpigd-popup-close::before, .ccpigd-download-popup-section .ccpigd-download-popup .ccpigd-popup-close::after, .cc-footer .cc-products-menu ul li a::after, .cc-footer .copyright .cc-scroll-top-btn, .cc-footer .copyright .copyright-payment p a, .cc-review-slider-window, .cc-review-slider-window .cc-review-window-close, .cc-review-slider-window .cc-review-window-close span, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item a, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.contact-btn a, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children::after, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu::before, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu .megamenu-column ul li.menu-item a, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu .megamenu-column ul li.menu-item a::after, body #cc-header {
+.transition, .ccp-download-popup-section .ccp-download-popup .ccp-popup-close::before, .ccp-download-popup-section .ccp-download-popup .ccp-popup-close::after, .ccpigd-section .ccpigd-btn, .ccpigd-section .ccpigd-btn.icon::before, .cc-google-drive-header .cc-google-drive-main-header .menu-site .main-header-menu .menu-item.ccpigd-header-btn a, .cc-google-drive-header .cc-google-drive-main-header .menu-site .main-header-menu .menu-item.ccpigd-header-btn a:before, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-header .buttons button .button-icon, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-header .buttons button .button-text, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-body .ccpigd-tab-content, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-body .ccpigd-tab-content:after, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-question .ccpigd-dropdown-arrow, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-question .ccpigd-dropdown-arrow::after, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-question .ccpigd-dropdown-arrow::before, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-answer a, .ccpigd-download-popup-section .ccpigd-download-popup .ccpigd-popup-close::before, .ccpigd-download-popup-section .ccpigd-download-popup .ccpigd-popup-close::after, .ccpigd-demo-feature .demo-feature-list .demo-feature-item .demo-feature-shortcode .igd-feature-content a, .cc-footer .cc-products-menu ul li a::after, .cc-footer .copyright .cc-scroll-top-btn, .cc-footer .copyright .copyright-payment p a, .cc-review-slider-window, .cc-review-slider-window .cc-review-window-close, .cc-review-slider-window .cc-review-window-close span, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item a, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.contact-btn a, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children::after, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu::before, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu .megamenu-column ul li.menu-item a, .codeconfig-header .header-menu-wrap .main-header-menu li.menu-item.menu-item-has-children .dropdown-menu .megamenu-column ul li.menu-item a::after, body #cc-header {
   transition: all 0.3s ease;
 }
 
@@ -287,7 +287,7 @@ svg {
   position: relative;
 }
 
-.absolute, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-header .buttons button:not(:last-child)::after, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-question .ccpigd-dropdown-arrow::after, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-question .ccpigd-dropdown-arrow::before, .ccpigd-download-popup-section .ccpigd-download-popup .ccpigd-popup-close::before, .ccpigd-download-popup-section .ccpigd-download-popup .ccpigd-popup-close::after {
+.absolute, .ccp-download-popup-section .ccp-download-popup .ccp-popup-close::before, .ccp-download-popup-section .ccp-download-popup .ccp-popup-close::after, .ccpigd-hero-section .ccpigd-hero-tab .ccpigd-tab-header .buttons button:not(:last-child)::after, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-question .ccpigd-dropdown-arrow::after, .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-question .ccpigd-dropdown-arrow::before, .ccpigd-download-popup-section .ccpigd-download-popup .ccpigd-popup-close::before, .ccpigd-download-popup-section .ccpigd-download-popup .ccpigd-popup-close::after {
   position: absolute;
 }
 
@@ -2593,12 +2593,19 @@ body {
   left: 5px;
   transform: rotate(-45deg);
 }
-.ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-answer p {
+.ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-answer {
+  color: #CFE3DA;
   padding: clamp(20px, 2.2vw, 24px);
   padding-top: 0;
+}
+.ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-answer p {
   font-size: clamp(16px, 1.7vw, 18px);
   line-height: 160%;
-  color: #CFE3DA;
+}
+.ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-answer ul,
+.ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-answer ol {
+  padding: 10px 0 10px clamp(30px, 3.5vw, 40px);
+  color: currentColor;
 }
 .ccpigd-faq-wrapper .ccpigd-faq-item .ccpigd-faq-answer a {
   color: currentColor;
@@ -3120,7 +3127,181 @@ body {
   border: 1px solid rgba(0, 172, 71, 0.2);
   border-radius: clamp(4px, 1vw, 16px);
 }
+.ccpigd-demo-feature .demo-feature-list .demo-feature-item .demo-feature-shortcode .igd-feature-content {
+  color: rgba(240, 255, 246, 0.6980392157);
+}
+.ccpigd-demo-feature .demo-feature-list .demo-feature-item .demo-feature-shortcode .igd-feature-content ul,
+.ccpigd-demo-feature .demo-feature-list .demo-feature-item .demo-feature-shortcode .igd-feature-content ol {
+  color: currentColor;
+  padding: 10px 0 10px clamp(30px, 3.5vw, 40px);
+}
+.ccpigd-demo-feature .demo-feature-list .demo-feature-item .demo-feature-shortcode .igd-feature-content a {
+  color: currentColor;
+  text-decoration: underline;
+}
+.ccpigd-demo-feature .demo-feature-list .demo-feature-item .demo-feature-shortcode .igd-feature-content a:hover {
+  color: #00ac47;
+}
 
 /*==============================================
 * Common css START
-================================================ *//*# sourceMappingURL=codeconfig-style.css.map */
+================================================ */
+.ccp-download-popup-section {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(17, 0, 0, 0.2);
+  padding: 0 25px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+}
+.ccp-download-popup-section.active {
+  opacity: 1;
+  visibility: visible;
+}
+.ccp-download-popup-section .ccp-download-popup {
+  width: 100%;
+  max-width: 900px;
+  padding: clamp(20px, 3vw, 40px);
+  background: rgb(255, 255, 255);
+  box-shadow: 0 4px 20px 0 rgb(195, 218, 255);
+  border-radius: clamp(8px, 1.8vw, 28px);
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content {
+  width: 100%;
+  max-width: 580px;
+  margin: 0 auto;
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content h3 {
+  font-size: clamp(24px, 3.4vw, 44px);
+  line-height: 120%;
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content h3,
+.ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content h4 {
+  font-family: "DM Sans", sans-serif;
+  color: #000e25;
+}
+@media only screen and (max-width: 575px) {
+  .ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content h3,
+  .ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content h4 {
+    margin-bottom: 10px;
+  }
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content p {
+  font-family: "DM Sans", sans-serif;
+  color: #3c4770;
+}
+@media only screen and (max-width: 575px) {
+  .ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content p {
+    margin-bottom: 10px;
+  }
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content .free-downolad-form {
+  text-align: start;
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content .free-downolad-form p {
+  width: 100%;
+  margin: 0;
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content .free-downolad-form span {
+  width: 100%;
+  color: #000e25;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content .free-downolad-form span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content .free-downolad-form label {
+  display: block;
+  margin-bottom: clamp(20px, 2.5vw, 30px);
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content .free-downolad-form label:has(input[type=checkbox]) {
+  align-items: start;
+  gap: 10px;
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content .free-downolad-form input[type=email] {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #85b3ff;
+  border-radius: clamp(5px, 0.8vw, 12px);
+  padding: clamp(8px, 1.1vw, 14px) clamp(10px, 1.5vw, 20px);
+  color: #0061fe;
+  font-size: clamp(12px, 1.5vw, 18px);
+  font-family: "DM Sans", sans-serif;
+  line-height: 100%;
+  margin-bottom: clamp(20px, 2.5vw, 30px);
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content .free-downolad-form input[type=email]::-moz-placeholder {
+  color: #85b3ff;
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content .free-downolad-form input[type=email]::placeholder {
+  color: #85b3ff;
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content .free-downolad-form input[type=checkbox] {
+  width: clamp(16px, 2vw, 24px);
+  aspect-ratio: 1/1;
+  border-radius: 4px;
+  position: relative;
+  margin-top: 5px;
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content .free-downolad-form input[type=submit] {
+  background: #0061fe;
+  border: 1px solid #0061fe;
+  border-radius: 8px;
+  padding: clamp(12px, 1.4vw, 18px) clamp(20px, 2.5vw, 30px);
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(14px, 1.7vw, 20px);
+  line-height: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content .free-downolad-form input[type=submit]:hover {
+  background: #fff;
+  color: #0061fe;
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content .free-downolad-form .wpcf7-spinner {
+  display: none;
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content .free-downolad-form .wpcf7-response-output {
+  color: #0061fe;
+  font-size: 16px;
+  line-height: 24px;
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-download-popup-content .free-downolad-form .field-btn {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-popup-close {
+  cursor: pointer;
+  top: clamp(10px, 1.7vw, 25px);
+  right: clamp(10px, 1.7vw, 25px);
+  background: transparent;
+  height: 20px;
+  aspect-ratio: 1/1;
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-popup-close::before, .ccp-download-popup-section .ccp-download-popup .ccp-popup-close::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  border: 5px;
+  background: #ff0005;
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-popup-close::before {
+  transform: rotate(45deg);
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-popup-close::after {
+  transform: rotate(-45deg);
+}
+.ccp-download-popup-section .ccp-download-popup .ccp-popup-close:hover::before, .ccp-download-popup-section .ccp-download-popup .ccp-popup-close:hover::after {
+  box-shadow: 0px 0px 2px 1px #0061fe;
+}/*# sourceMappingURL=codeconfig-style.css.map */

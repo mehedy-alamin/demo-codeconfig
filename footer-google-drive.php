@@ -6,13 +6,13 @@
                 <!-- Left Side -->
                 <div class="left-side">
                     <div class="logos d-flex align-center">
-                        <a class="cc-logo flex-center" href="<?php echo esc_url(home_url('/')); ?>">
+                        <a class="cc-logo flex-center" href="https://codeconfig.dev/" aria-label="<?php echo esc_attr__('CodeConfig Home', 'demo-codeconfig'); ?>">
                             <img src="<?php echo esc_url(GET_THEME_URI . '/assets/images/google-drive/codeconfig-mini-logo.svg'); ?>" alt="<?php echo esc_attr__('CodeConfig', 'demo-codeconfig'); ?>">
                         </a>
 
                         <span class="logo-divider"></span>
 
-                        <a class="ccp-google-drive-logo d-flex align-center margin-0" href="<?php echo esc_url(home_url('/')); ?>">
+                        <a class="ccp-google-drive-logo d-flex align-center margin-0" href="https://codeconfig.dev/integration-google-drive/" aria-label="<?php echo esc_attr__('Integration for Google Drive', 'demo-codeconfig'); ?>">
                             <img src="<?php echo esc_url(GET_THEME_URI . '/assets/images/google-drive/integration_for_google_drive.svg'); ?>" alt="<?php echo esc_attr__('Integration for Google Drive', 'demo-codeconfig'); ?>">
                             <div class="logo-label d-flex flex-col align-start">
                                 <span><?php echo esc_html__('INTEGRATION FOR', 'demo-codeconfig'); ?></span>
@@ -157,7 +157,7 @@
                         foreach ($payment_methods as $method => $label) {
                         ?>
                             <li>
-                                <img src="<?php echo esc_url(GET_THEME_URI . '/assets/images/google-drive/' . $method . '.svg'); ?>" alt="<?php echo esc_attr($label); ?>">
+                                <img src="<?php echo esc_url(GET_THEME_URI . '/assets/images/' . $method . '.svg'); ?>" alt="<?php echo esc_attr($label); ?>">
                             </li>
                         <?php
                         }
@@ -170,25 +170,59 @@
 </footer>
 <!-- Footer End -->
 
-<section class="ccpigd-section ccpigd-download-popup-section flex-center transition" role="dialog" aria-modal="true" aria-labelledby="download-popup-title" aria-hidden="true">
-    <div class="ccpigd-download-popup">
-        <button class="d-flex align-center absolute ccpigd-popup-close-btn ccpigd-popup-close" type="button" aria-label="<?php echo esc_attr__('Close popup', 'demo-codeconfig'); ?>">
-        </button>
+<!-- Free Download Popup start-->
+<?php
+$global_drop_box = get_field('google_drive_area', 'option');
+$download_popup_box = $global_drop_box['download_popup'];
+$ccp_free_download_link = $download_popup_box['ccp_free_download'];
 
-        <div class="text-center ccpigd-download-popup-content relative">
-            <h3 id="download-popup-title"><?php echo esc_html__('Are You Ready to Integrate Your Google Drive', 'demo-codeconfig'); ?></h3>
-            <p><?php echo esc_html__('Ready to simplify your file management? Get started now and experience seamless Google Drive integration with WordPress—effortless, fast, and secure. Try it today!', 'demo-codeconfig'); ?></p>
+if (!empty($ccp_free_download_link)):
 
-            <div class="free-downolad-form">
-                <a href="<?php echo esc_url('https://downloads.wordpress.org/plugin/integration-google-drive.zip'); ?>"
-                    class="ccpigd-btn primary icon icon-wordpress field-btn ccpigd-popup-close-btn"
-                    target="_blank" rel="noopener noreferrer">
-                    <?php echo esc_html__('Free Download', 'demo-codeconfig'); ?>
-                </a>
+    $ccp_free_download_link_url = $ccp_free_download_link['url'];
+    $free_download_form = $download_popup_box['form_id'] ?? '';
+?>
+    <section class="db-section ccp-download-popup-section flex-center transition"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="download-popup-title"
+        aria-hidden="true">
+        <div class="ccp-download-popup relative">
+            <button class="d-flex align-center absolute ccp-popup-close-btn ccp-popup-close"
+                type="button"
+                aria-label="<?php echo esc_attr__('Close popup', 'codeconfig'); ?>">
+            </button>
+
+            <div class="text-center ccp-download-popup-content relative">
+                <?php
+                ?>
+                <h3 id="download-popup-title"><?php echo esc_html($download_popup_box['title'] ?? ''); ?></h3>
+                <p><?php echo esc_html($download_popup_box['description'] ?? ''); ?></p>
+                <a style="display: none;" id="ccp-free-download-link-url" href="<?php echo esc_url($ccp_free_download_link_url); ?>">Demo</a>
+
+                <div class="free-downolad-form">
+                    <?php if (!empty($free_download_form)): ?>
+                        <?php echo do_shortcode($free_download_form); ?>
+                    <?php elseif (!empty($ccp_free_download_link_url)): ?>
+                        <a href="<?php echo esc_url($ccp_free_download_link_url, array('http', 'https')); ?>"
+                            class="ccpidb-btn primary icon icon-wordpress field-btn ccp-popup-close-btn"
+                            <?php if (($ccp_free_download_link['target'] ?? '_self') === '_blank'): ?>
+                            target="_blank" rel="noopener noreferrer"
+                            <?php endif; ?>>
+                            <?php echo esc_html($ccp_free_download_link['title'] ?? __('Download Free', 'codeconfig')); ?>
+                        </a>
+                    <?php else: ?>
+                        <?php if (current_user_can('manage_options')): ?>
+                            <p class="text-center" style="color: #e1f2a6;">
+                                <?php echo esc_html__('Please set download link or form in theme options.', 'codeconfig'); ?>
+                            </p>
+                        <?php endif; ?>
+                    <?php endif; ?>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+<?php endif; ?>
+<!-- Free Download Popup end-->
 
 <?php wp_footer(); ?>
 </body>

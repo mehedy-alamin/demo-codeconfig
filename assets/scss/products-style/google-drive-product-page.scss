@@ -1198,12 +1198,19 @@ body {
     }
 
     .ccpigd-faq-answer {
+      color: #CFE3DA;
+      padding: clamp(20px, 2.2vw, 24px);
+      padding-top: 0;
+
       p {
-        padding: clamp(20px, 2.2vw, 24px);
-        padding-top: 0;
         font-size: clamp(16px, 1.7vw, 18px);
         line-height: 160%;
-        color: #CFE3DA;
+      }
+
+      ul,
+      ol {
+        padding: 10px 0 10px clamp(30px, 3.5vw, 40px);
+        color: currentColor;
       }
 
       a {
@@ -1812,6 +1819,25 @@ body {
         background: #00150D;
         border: 1px solid $ccpigd-border;
         border-radius: clamp(4px, 1vw, 16px);
+
+        .igd-feature-content {
+          color: $ccpigd-text;
+          
+          ul,
+          ol {
+            color: currentColor;
+            padding: 10px 0 10px clamp(30px, 3.5vw, 40px);
+          }
+          a {
+            @extend .transition;
+            color: currentColor;
+            text-decoration: underline;
+            
+            &:hover {
+              color: $ccpigd-primary;
+            }
+          }
+        }
       }
     }
   }

@@ -28,8 +28,10 @@ function demo_codeconfig_setup_config()
 
     register_nav_menus(
         [
+            'primary-menu'           => __('Primary Menu', 'demo-codeconfig'),
+            'products-menu'         => __('Products Menu', 'demo-codeconfig'),
             'google-drive-menu'      => __('Google Drive Menu', 'demo-codeconfig'),
-            'igd_help-center'        => __('IGD Help Center', 'demo-codeconfig'),
+            'igd-help-center'        => __('IGD Help Center', 'demo-codeconfig'),
             'igd-resources'          => __('IGD Resources', 'demo-codeconfig'),
         ]
     );
@@ -49,10 +51,10 @@ function demo_codeconfig_setup_config()
 
     // require_once GET_THEME_URL . '/core/config.php';
     require_once GET_THEME_URL . '/inc/demo-cc-enqueue.php';
+    require_once GET_THEME_URL . '/inc/general-functions.php';
     // require_once GET_THEME_URL . '/inc/nav-walker.php';
     // require_once GET_THEME_URL . '/inc/cpt.php';
     // require_once GET_THEME_URL . '/inc/cc-ajax.php';
-    // require_once GET_THEME_URL . '/inc/general-functions.php';
     // require_once GET_THEME_URL . '/inc/cc-sidebar.php';
     // require_once GET_THEME_URL . '/inc/cc-acf-localized.php';
     // require_once GET_THEME_URL . '/inc/cc-custom-breadcrumb.php';
