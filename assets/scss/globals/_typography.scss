@@ -27,12 +27,9 @@ body {
     font-size: 16px;
     line-height: 26px;
     color: $body;
-    font-family: $pop;
+    font-family: $dms;
 }
 
-button {
-    font-family: $pop;
-}
 
 /* #####################################
 *          TYPOGRAPHY SETTINGS
@@ -47,7 +44,7 @@ h5,
 h6 {
     font-weight: 700;
     margin-bottom: 20px;
-    font-family: $pop;
+    font-family: $dms;
 }
 
 a {
@@ -344,4 +341,19 @@ svg {
         text-align: center;
         justify-content: center;
     }
+}
+
+/* Visually Hidden Class - Better than display:none */
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+    pointer-events: none !important;
+    user-select: none !important;
 }

@@ -197,7 +197,7 @@ if (!empty($ccp_free_download_link)):
                 ?>
                 <h3 id="download-popup-title"><?php echo esc_html($download_popup_box['title'] ?? ''); ?></h3>
                 <p><?php echo esc_html($download_popup_box['description'] ?? ''); ?></p>
-                <a style="display: none;" id="ccp-free-download-link-url" href="<?php echo esc_url($ccp_free_download_link_url); ?>">Demo</a>
+                <a class="visually-hidden" id="ccp-free-download-link-url" href="<?php echo esc_url($ccp_free_download_link_url); ?>">Demo</a>
 
                 <div class="free-downolad-form flex-center">
                     <?php if (!empty($free_download_form)): ?>

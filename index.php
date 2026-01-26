@@ -8,42 +8,27 @@
 
 get_header(); ?>
 
-<section class="cc-home-hero hero-bg-shadow relative">
-    <main id="main-content" class="main-content">
-        <?php if (have_posts()) : ?>
-            <div class="posts-container">
-                <?php while (have_posts()) : the_post(); ?>
-                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                        <header class="entry-header">
-                            <h2 class="entry-title">
-                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                            </h2>
-                            <div class="entry-meta">
-                                <span class="posted-on"><?php echo get_the_date(); ?></span>
-                                <span class="byline"> by <?php the_author(); ?></span>
-                            </div>
-                        </header>
-
-                        <div class="entry-content">
-                            <?php the_excerpt(); ?>
-                        </div>
-
-                        <footer class="entry-footer">
-                            <a href="<?php the_permalink(); ?>" class="read-more">Read More</a>
-                        </footer>
-                    </article>
-                <?php endwhile; ?>
+<section class="ccpigd-section ccpigd-hero-section ccpigd-section-top overflow-hidden relative ">
+    <div class="ccpigd-hero-section-bg absolute">
+        <img width="1920" height="1053" src="<?php echo GET_THEME_URI; ?>/assets/images/google-drive/Codeconfig-igd-banner-bg.png" alt="Hero Background">
+    </div>
+    <div class="igd-container">
+        <div class="ccpigd-hero-content-box section-title-box text-center">
+            <span class="ccpigd-hero-sub-title d-flex align-center">
+                <i class="flex-center">
+                    <img src="<?php echo GET_THEME_URI; ?>/assets/images/google-drive/shield_lock.svg?>" alt="Security icon" width="24" height="24">
+                </i>
+                Best Google Drive Integration Plugin For WordPress
+            </span>
+            <h1>Choose the Plan That Fits Your Needs and Get Started Confidently</h1>
+            <p>Unlock the power of Google Drive in WordPress with ease and confidence.</p>
+            <div class="ccpigd-hero-btns flex-center">
+                <a class="ccpigd-btn primary icon icon-wordpress" href="https://codeconfig.dev/googledrive/" target="_blank" rel="noopener noreferrer">
+                    <span>Get Started</span>
+                </a>
             </div>
-
-            <?php the_posts_navigation(); ?>
-
-        <?php else : ?>
-            <div class="no-posts">
-                <h2>Nothing Found</h2>
-                <p>Sorry, but nothing matched your search criteria.</p>
-            </div>
-        <?php endif; ?>
-    </main>
+        </div>
+    </div>
 </section>
 
 <?php get_footer(); ?>

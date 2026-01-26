@@ -6,18 +6,8 @@
                 <!-- Left Side -->
                 <div class="left-side">
                     <div class="logos d-flex align-center">
-                        <a class="cc-logo flex-center" href="<?php echo esc_url(home_url('/')); ?>">
+                        <a class="cc-logo flex-center" href="https://codeconfig.dev/" aria-label="<?php echo esc_attr__('CodeConfig Home', 'demo-codeconfig'); ?>">
                             <img src="<?php echo esc_url(GET_THEME_URI . '/assets/images/google-drive/codeconfig-mini-logo.svg'); ?>" alt="<?php echo esc_attr__('CodeConfig', 'demo-codeconfig'); ?>">
-                        </a>
-
-                        <span class="logo-divider"></span>
-
-                        <a class="ccp-google-drive-logo d-flex align-center margin-0" href="<?php echo esc_url(home_url('/')); ?>">
-                            <img src="<?php echo esc_url(GET_THEME_URI . '/assets/images/google-drive/integration_for_google_drive.svg'); ?>" alt="<?php echo esc_attr__('Integration for Google Drive', 'demo-codeconfig'); ?>">
-                            <div class="logo-label d-flex flex-col align-start">
-                                <span><?php echo esc_html__('INTEGRATION FOR', 'demo-codeconfig'); ?></span>
-                                <h6><?php echo esc_html__('GOOGLE DRIVE', 'demo-codeconfig'); ?></h6>
-                            </div>
                         </a>
                     </div><!-- /.logos -->
 
@@ -57,11 +47,11 @@
                     <nav class="footer-menu resources" aria-label="<?php echo esc_attr__('Resources navigation', 'demo-codeconfig'); ?>">
                         <h2><?php echo esc_html__('Resources', 'demo-codeconfig'); ?></h2>
                         <?php
-                        if (has_nav_menu('igd-resources')) {
+                        if (has_nav_menu('company-menu')) {
                             wp_nav_menu(array(
-                                'theme_location' => 'igd-resources',
-                                'menu_id'        => 'igd-resources-menu',
-                                'menu_class'     => 'igd-resources-menu',
+                                'theme_location' => 'company-menu',
+                                'menu_id'        => 'company-menu',
+                                'menu_class'     => 'company-menu',
                                 'container'      => false,
                                 'fallback_cb'    => false,
                                 'depth'          => 2,
@@ -75,11 +65,11 @@
                     <nav class="footer-menu company" aria-label="<?php echo esc_attr__('Company navigation', 'demo-codeconfig'); ?>">
                         <h2><?php echo esc_html__('Help Center', 'demo-codeconfig'); ?></h2>
                         <?php
-                        if (has_nav_menu('igd-help-center')) {
+                        if (has_nav_menu('resources-menu')) {
                             wp_nav_menu(array(
-                                'theme_location' => 'igd-help-center',
-                                'menu_id'        => 'igd-help-center-menu',
-                                'menu_class'     => 'igd-help-center-menu',
+                                'theme_location' => 'resources-menu',
+                                'menu_id'        => 'resources-menu',
+                                'menu_class'     => 'resources-menu',
                                 'container'      => false,
                                 'fallback_cb'    => false,
                                 'depth'          => 2,
@@ -157,7 +147,7 @@
                         foreach ($payment_methods as $method => $label) {
                         ?>
                             <li>
-                                <img src="<?php echo esc_url(GET_THEME_URI . '/assets/images/google-drive/' . $method . '.svg'); ?>" alt="<?php echo esc_attr($label); ?>">
+                                <img src="<?php echo esc_url(GET_THEME_URI . '/assets/images/' . $method . '.svg'); ?>" alt="<?php echo esc_attr($label); ?>">
                             </li>
                         <?php
                         }

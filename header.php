@@ -8,17 +8,8 @@ get_template_part('template-part/head');
             <div class="logo-site d-flex align-center space-between">
                 <div class="logos d-flex align-center justify-start">
                     <!-- CodeConfig Logo -->
-                    <a class="cc-logo flex-center" href="#" aria-label="CodeConfig Home">
+                    <a class="cc-logo flex-center" href="https://codeconfig.dev/" aria-label="CodeConfig Home">
                         <img src="<?php echo GET_THEME_URI; ?>/assets/images/google-drive/codeconfig-mini-logo.svg" alt="CodeConfig" width="40" height="40">
-                    </a>
-                    <span class="logo-divider" aria-hidden="true"></span>
-                    <!-- Google Drive Integration Logo -->
-                    <a class="ccp-google-drive-logo d-flex align-center margin-0" href="#" aria-label="Integration for Google Drive">
-                        <img src="<?php echo GET_THEME_URI; ?>/assets/images/google-drive/integration_for_google_drive.svg" alt="Integration for Google Drive" width="50" height="50">
-                        <div class="logo-label d-flex flex-col align-start hide-mobile">
-                            <span><?php echo esc_html__('INTEGRATION FOR', 'demo-codeconfig'); ?></span>
-                            <h6><?php echo esc_html__('GOOGLE DRIVE', 'demo-codeconfig'); ?></h6>
-                        </div>
                     </a>
                 </div><!-- /.logos -->
 
@@ -35,16 +26,8 @@ get_template_part('template-part/head');
                 <div class="mobile-menu-header logos d-flex align-center space-between hide-desktop">
                     <!-- Mobile Logo -->
                     <div class="logos d-flex align-center justify-start">
-                        <a class="cc-logo flex-center" href="#" aria-label="CodeConfig Home">
+                        <a class="cc-logo flex-center" href="https://codeconfig.dev/" aria-label="CodeConfig Home">
                             <img src="<?php echo GET_THEME_URI; ?>/assets/images/google-drive/codeconfig-mini-logo.svg" alt="CodeConfig" width="40" height="40">
-                        </a>
-                        <span class="logo-divider" aria-hidden="true"></span>
-                        <a class="ccp-google-drive-logo d-flex align-center margin-0" href="#" aria-label="Integration for Google Drive">
-                            <img src="<?php echo GET_THEME_URI; ?>/assets/images/google-drive/integration_for_google_drive.svg" alt="Integration for Google Drive" width="50" height="50">
-                            <div class="logo-label d-flex flex-col align-start hide-mobile">
-                                <span><?php echo esc_html__('INTEGRATION FOR', 'demo-codeconfig'); ?></span>
-                                <h6><?php echo esc_html__('GOOGLE DRIVE', 'demo-codeconfig'); ?></h6>
-                            </div>
                         </a>
                     </div>
 
@@ -56,10 +39,10 @@ get_template_part('template-part/head');
                 </div><!-- /.mobile-menu-header -->
 
                 <?php
-                if (has_nav_menu('google-drive-menu')) {
+                if (has_nav_menu('primary-menu')) {
                     wp_nav_menu(array(
-                        'theme_location' => 'google-drive-menu',
-                        'menu_id'        => 'cc-google-drive-main-menu',
+                        'theme_location' => 'primary-menu',
+                        'menu_id'        => 'cc-primary-main-menu',
                         'menu_class'     => 'main-header-menu',
                         'container'      => false,
                         'fallback_cb'    => false,

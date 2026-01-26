@@ -492,7 +492,6 @@
           a {
             @include font(17, 45);
             color: $text;
-            font-family: $pop;
             font-style: normal;
             font-weight: 400;
             letter-spacing: 0.16px;
@@ -693,7 +692,6 @@
       p {
         @include font(18, 28);
         color: #000;
-        font-family: $pop;
         font-style: normal;
         font-weight: 400;
         margin: 0;

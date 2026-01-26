@@ -1,21 +1,14 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> class="no-js">
 
 <head>
-    <meta charset="<?php bloginfo('charset'); ?>" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><?php wp_title('|', true, 'right');
-            bloginfo('name'); ?></title>
-    <meta name="description" content="<?php echo esc_attr(get_bloginfo('description')); ?>" />
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <?php
-    // Add security headers (also should be set in .htaccess or server config)
-    header("X-Content-Type-Options: nosniff");
-    header("X-Frame-Options: SAMEORIGIN");
-    header("X-XSS-Protection: 1; mode=block");
-    header("Referrer-Policy: strict-origin-when-cross-origin");
-    ?>
+    <title><?php wp_title('|', true, 'right');
+            echo esc_html(get_bloginfo('name')); ?></title>
+    <meta name="description" content="<?php echo esc_attr(get_bloginfo('description')); ?>">
 
     <?php wp_head(); ?>
 </head>
