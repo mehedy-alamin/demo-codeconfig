@@ -3,16 +3,16 @@
 // Validate ACF is active and field exists
 if (function_exists('get_field')) {
     $footer_cta = get_field('footer_cta', 'option');
-    $igd_footer_cta = is_array($footer_cta) && isset($footer_cta['igd_footer_cta'])
-        ? $footer_cta['igd_footer_cta']
+    $cc_footer_cta = is_array($footer_cta) && isset($footer_cta['cc_footer_cta'])
+        ? $footer_cta['cc_footer_cta']
         : array();
 
     // Sanitize all fields
-    $cta_title = !empty($igd_footer_cta['title']) ? sanitize_text_field($igd_footer_cta['title']) : '';
-    $cta_description = !empty($igd_footer_cta['description']) ? sanitize_textarea_field($igd_footer_cta['description']) : '';
+    $cta_title = !empty($cc_footer_cta['title']) ? sanitize_text_field($cc_footer_cta['title']) : '';
+    $cta_description = !empty($cc_footer_cta['description']) ? sanitize_textarea_field($cc_footer_cta['description']) : '';
 
     // Pro button data
-    $pro_button = !empty($igd_footer_cta['cta_pro_button']) ? $igd_footer_cta['cta_pro_button'] : array();
+    $pro_button = !empty($cc_footer_cta['cta_pro_button']) ? $cc_footer_cta['cta_pro_button'] : array();
     $pro_button_url = !empty($pro_button['url']) ? esc_url_raw($pro_button['url'], array('http', 'https')) : '';
     $pro_button_title = !empty($pro_button['title']) ? sanitize_text_field($pro_button['title']) : '';
     $pro_button_target = !empty($pro_button['target']) ? sanitize_text_field($pro_button['target']) : '_self';
@@ -53,11 +53,11 @@ if (function_exists('get_field')) {
                         <?php endif; ?>
 
                         <!-- Free Download Button -->
-                        <button class="ccp-free-download-btn ccpigd-btn secondary white icon icon-wordpress"
+                        <!-- <button class="ccp-free-download-btn ccpigd-btn secondary white icon icon-wordpress"
                             type="button"
                             aria-label="<?php echo esc_attr__('Download Free', 'demo-codeconfig'); ?>">
                             <?php echo esc_html__('Download Free', 'demo-codeconfig'); ?>
-                        </button>
+                        </button> -->
                     </div><!-- /.ccpigd-btn-group -->
 
                 </div><!-- /.ccpigd-footer-cta-wrapper -->

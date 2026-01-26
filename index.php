@@ -31,4 +31,6 @@ get_header(); ?>
     </div>
 </section>
 
+<?php get_template_part('template-part/cc-footer-cta'); ?>
+
 <?php get_footer(); ?>
